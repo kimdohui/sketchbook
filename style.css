@@ -1,19 +1,25 @@
 @import "reset.css";
 
 body{
-    background-color: #ffa498;
+    background-color: #f7b5aa;
+}
+
+#paint
+{
+    position: relative;
+    left: 41.5%;
+    font-size: 29px;
+    color: white;
 }
 
 .canvas{
     position: relative;
-    width: 450px;
+    width: 700px;
     height: 450px;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 12px 13px 31px -4px rgba(191,191,191,0.76);
-    text-align: center;
-    left: 34%;
-    top: 100px;
+    left: 27%;
+    top: 30px;
 }
 
 .control{
@@ -21,31 +27,50 @@ body{
     display: flex;
     flex-direction: column;/*flex 상태를 가로로*/
     align-items: center;
-    top: 120px;
+    top: 65px;
 }
 
 .control_buttons{
     position: relative;
-    display: flex;  /*flex 상태로 바꿈 공간을 말하는 container 와 item*/
-    margin-top: 15px; 
+    display: flex;  /*flex 상태로 바꿈 공간을 말하는 container 와 item*/ 
     right: 1.5%;  
+    margin-top: 30px;
 }
 
 #jsrange
 {
-    margin-right: 54px;
+    margin-right: 40px;
+    margin-top: 20px;
+    width: 250px;
+}
+
+#jsmode{
+    position: relative;
+    left: 37.5%;
+}
+
+#jssave{
+    position: relative;
+    left: 45%;
+}
+
+.reset{
+    right: 0.5%;
+    width: 80px;
+    height: 50px;
 }
 
 button {
-    margin-right: 20px;
-    width: 60px;
-    height: 20px;
-    border-radius: 15px;
-    border: none;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    box-shadow: none;
+    border: 1.5px solid white ;
+    font-size: 17PX;
+    width:100px;
+    height: 32px;
+    border-radius: 10px;
     outline: none;
-    cursor: pointer;
-    /*all: unset  버튼 모양 없애줌;*/
-    box-shadow: 12px 13px 31px -4px rgba(191,191,191,0.76);
 }
 
  /*activity는 버튼 클릭시를 뜻함*/
@@ -57,14 +82,14 @@ button {
     display: flex;
 }
 
-.control_colors .control_color{
+.control_color{
     position: relative;
-    right:6%;
-    width: 50px;
+    right:1.5%;
+    width: 40px;
     height: 50px;
-    margin-top: 20px;
-    border-radius: 25px;
+    margin-left: 3px;
     cursor: pointer;
+    border-radius: 10px;
     box-shadow: 12px 13px 31px -4px rgba(191,191,191,0.76);
 }
 

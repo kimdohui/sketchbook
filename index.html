@@ -8,28 +8,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+    <span class="control_buttons">
+        <button id="jsmode">Fill</button>
+        <span id="paint" >painting</span>
+        <button id="jssave">save</button>
+    </span>
+
     <canvas id="jscanvas" class="canvas"></canvas>
     <div class="control">
         
-        <div class="control_range">
-            <input type="range" id="jsrange" min="0.1" max="5.0" value="2.5" step="0.1">
+        <div class="control_colors" id="jscolors">
+            <div class="control_color jscolor" style="background-color:red;"></div>
+            <div class="control_color jscolor" style="background-color:rgb(248, 101, 126);"></div>
+            <div class="control_color jscolor" style="background-color:orange;"></div>
+            <div class="control_color jscolor" style="background-color:rgb(252, 221, 186);"></div>
+            <div class="control_color jscolor" style="background-color:rgb(243, 243, 53);"></div>
+            <div class="control_color jscolor" style="background-color:rgb(133, 95, 60);"></div>
+            <div class="control_color jscolor" style="background-color:rgb(24, 209, 33)"></div>
+            <div class="control_color jscolor" style="background-color:green;"></div>
+            <div class="control_color jscolor" style="background-color:skyblue;"></div>
+            <div class="control_color jscolor" style="background-color:rgb(45, 28, 94);"></div>
+            <div class="control_color jscolor" style="background-color:purple;"></div>
+            <div class="control_color jscolor" style="background-color:rgb(90, 90, 89);"></div>
+            <div class="control_color jscolor" style="background-color:black"></div>
+            <div class="control_color jscolor" style="background-color:white;"></div>
+            <button class="reset" onclick="button()">Reset</button>
         </div>
 
-        <div class="control_buttons">
-            <button id="jsmode">Fill</button>
-            <button id="jssave">save</button>
-        </div>
-        
-        <div class="control_colors" id="jscolors">
-            <div class="control_color" style="background-color:black;"></div>
-            <div class="control_color" style="background-color:white;"></div>
-            <div class="control_color" style="background-color:red;"></div>
-            <div class="control_color" style="background-color:orange;"></div>
-            <div class="control_color" style="background-color:yellow;"></div>
-            <div class="control_color" style="background-color:green;"></div>
-            <div class="control_color" style="background-color:skyblue;"></div>
-            <div class="control_color" style="background-color:blue;"></div>
-            <div class="control_color" style="background-color:purple;"></div>
+        <div class="control_range">
+            <input type="range" id="jsrange" min="0.1" max="10" value="5" step="0.1">
+            <h2 style="position: relative; top: 7px; left: 77px; color: gray; ">brush width</h2>
         </div>
     </div>
 
